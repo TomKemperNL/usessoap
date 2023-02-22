@@ -1,6 +1,7 @@
 package nl.tomkemper.usessoap;
 
 import com.baeldung.springsoap.gen.Country;
+import com.baeldung.springsoap.gen.Currency;
 import com.baeldung.springsoap.gen.GetCountryRequest;
 import com.baeldung.springsoap.gen.GetCountryResponse;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
@@ -19,6 +20,8 @@ public class CountryEndpoint {
         String name = req.getName();
         Country c = new Country();
         c.setName(name);
+        c.setPopulation(999);
+        c.setCurrency(Currency.EUR);
         c.setCapital("Hoofdstad!");
 
         GetCountryResponse resp = new GetCountryResponse();
