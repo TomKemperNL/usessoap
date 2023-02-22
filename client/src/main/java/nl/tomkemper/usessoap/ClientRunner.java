@@ -17,7 +17,7 @@ public class ClientRunner implements CommandLineRunner {
     public void run(String... args) throws Exception {
         Thread.sleep(1000); //lelijke hack om even te wachten tot de webservice wakker is:)
 
-        var resp = this.client.getCountry("Nederland");
-        System.out.println(resp.getCountry().getName());
+//        var resp = this.client.getCountry("Nederland");
+//        System.out.println(resp.getCountry().getName());
     }
 }
