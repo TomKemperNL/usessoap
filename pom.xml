@@ -91,7 +91,7 @@
                 </executions>
                 <configuration>
                     <schemaLanguage>WSDL</schemaLanguage>
-                    <generateDirectory>${project.basedir}/src/main/java/client</generateDirectory>
+                    <generateDirectory>${project.basedir}/src/main/java</generateDirectory>
                     <generatePackage>com.baeldung.springsoap.client.gen</generatePackage>
                     <schemaDirectory>${project.basedir}/src/main/resources</schemaDirectory>
                     <schemaIncludes>
