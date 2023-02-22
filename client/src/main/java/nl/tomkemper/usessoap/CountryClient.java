@@ -1,4 +1,4 @@
-package nl.tomkemper.usessoap.client;
+package nl.tomkemper.usessoap;
 
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 import com.baeldung.springsoap.client.gen.GetCountryRequest;

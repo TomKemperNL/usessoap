@@ -1,6 +1,7 @@
-package nl.tomkemper.usessoap.client;
+package nl.tomkemper.usessoap;
 
 import com.baeldung.springsoap.client.gen.Country;
+import com.baeldung.springsoap.client.gen.GetCountryRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
@@ -14,7 +15,7 @@ public class ClientConfig {
 
         //even oppassen, we draaien de service en de client in 1 spring-context, terwijl ze andere serializers nodig hebben:S
         Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-
+        marshaller.setClassesToBeBound(GetCountryRequest.class, GetCountryRequest.class);
 
 
         CountryClient client = new CountryClient();

@@ -1,4 +1,4 @@
-package nl.tomkemper.usessoap.client;
+package nl.tomkemper.usessoap;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
