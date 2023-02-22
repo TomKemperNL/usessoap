@@ -30,22 +30,26 @@
     <build>
         <plugins>
 
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>jaxws-maven-plugin</artifactId>
-                    <version>2.6</version>
-                    <executions>
-                        <execution>
-                            <goals>
-                                <goal>wsimport</goal>
-                            </goals>
-                        </execution>
-                    </executions>
-                    <configuration>
-                        <wsdlDirectory>${project.basedir}/src/main/resources/</wsdlDirectory>
-                    </configuration>
-                </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>jaxb2-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>xjc</id>
+                        <goals>
+                            <goal>xjc</goal>
+                        </goals>
+                    </execution>
 
+                </executions>
+                <configuration>
+                    <sources>
+                        <source>${project.basedir}/src/main/resources/countries.wsdl</source>
+                    </sources>
+                    <sourceType>wsdl</sourceType>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
