@@ -1,6 +1,6 @@
 package nl.tomkemper.usessoap;
 
-import nl.tomkemper.usessoap.client.gen.*;
+import nl.tomkemper.usessoap.gen.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;

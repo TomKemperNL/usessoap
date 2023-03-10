@@ -1,6 +1,6 @@
 package nl.tomkemper.usessoap;
 
-import nl.tomkemper.usessoap.service.gen.*;
+import nl.tomkemper.usessoap.gen.*;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
@@ -9,7 +9,7 @@ import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 @Endpoint
 public class CountryEndpoint {
 
-    private static final String NAMESPACE_URI = "http://www.baeldung.com/springsoap/gen";
+    private static final String NAMESPACE_URI = "http://tomkemper.nl/usessoap/gen";
 
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getCountryRequest")
     @ResponsePayload

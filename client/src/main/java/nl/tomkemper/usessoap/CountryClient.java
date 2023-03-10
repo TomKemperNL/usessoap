@@ -1,6 +1,6 @@
 package nl.tomkemper.usessoap;
 
-import nl.tomkemper.usessoap.client.gen.*;
+import nl.tomkemper.usessoap.gen.*;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 
 public class CountryClient extends WebServiceGatewaySupport {
