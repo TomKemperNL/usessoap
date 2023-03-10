@@ -1,11 +1,9 @@
 package nl.tomkemper.usessoap;
 
-import com.baeldung.springsoap.gen.GetCountryRequest;
-import com.baeldung.springsoap.gen.GetCountryResponse;
+import nl.tomkemper.usessoap.client.gen.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
-import org.springframework.xml.transform.StringResult;
 
 @Configuration
 public class ClientConfig {

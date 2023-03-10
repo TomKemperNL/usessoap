@@ -1,7 +1,6 @@
 package nl.tomkemper.usessoap;
 
-import com.baeldung.springsoap.gen.GetCountryRequest;
-import com.baeldung.springsoap.gen.GetCountryResponse;
+import nl.tomkemper.usessoap.client.gen.*;
 import org.springframework.ws.client.core.support.WebServiceGatewaySupport;
 
 public class CountryClient extends WebServiceGatewaySupport {

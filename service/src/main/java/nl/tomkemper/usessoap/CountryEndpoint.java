@@ -1,9 +1,6 @@
 package nl.tomkemper.usessoap;
 
-import com.baeldung.springsoap.gen.Country;
-import com.baeldung.springsoap.gen.Currency;
-import com.baeldung.springsoap.gen.GetCountryRequest;
-import com.baeldung.springsoap.gen.GetCountryResponse;
+import nl.tomkemper.usessoap.service.gen.*;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
